@@ -16,14 +16,10 @@ class Card extends Component {
 		};
 		return (
 			<div className="card m-4" style={cardStyle} dir="rtl">
-				<img
-					src="https://files.virgool.io/upload/users/3182518/posts/mdtyspslbcan/0stogdlhqipb.webp"
-					alt="تصویر"
-					className="card-img-top"
-				/>
+				<img src={this.props.img} alt="تصویر" className="card-img-top" />
 				<div className="card-body" style={rtlStyle}>
-					<h1 className="card-title">مقاله</h1>
-					<p className="card-text">توضیحات مقاله</p>
+					<h1 className="card-title">{this.props.title}</h1>
+					<p className="card-text">{this.props.description}</p>
 					<a href="" className="btn btn-primary">
 						ادامه مطلب
 					</a>
